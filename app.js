@@ -45,6 +45,10 @@ app.get('/api/orders/:id', async (req, res) => {
   }
 });
 
+app.get('/', (req, res) => {
+  res.send('Backend is running');
+});
+
 // Routes
 app.use('/auth', authRoutes);
 app.use('/api', authRoutes);
