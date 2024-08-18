@@ -49,6 +49,11 @@ app.get('/', (req, res) => {
   res.send('Backend is running');
 });
 
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send('Something broke!');
+});
+
 // Routes
 app.use('/auth', authRoutes);
 app.use('/api', authRoutes);
