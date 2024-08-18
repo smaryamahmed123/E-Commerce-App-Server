@@ -134,7 +134,7 @@ console.log('userid', userId)
       res.json(orders);
     } catch (error) {
       console.error('Error fetching orders:', error);
-      res.status(500).send('Server Error');
+      res.status(500).send({ message: 'Server Error', error: error.message });
     }
   };
 
