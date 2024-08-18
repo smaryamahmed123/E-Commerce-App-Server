@@ -23,9 +23,10 @@ connectDB();
 
 // Middleware
 app.use(cors({
-  origin: process.env.CLIENT_URL, 
+  origin: 'https://chipper-alpaca-e56ea9.netlify.app', // Make sure this matches exactly
   credentials: true
 }));
+
 app.use(express.json());
 app.use(session({
   secret: process.env.SESSION_SECRET,
