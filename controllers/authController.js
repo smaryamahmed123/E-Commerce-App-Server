@@ -82,6 +82,8 @@ const loginUser = async (req, res) => {
 
 const googleSignUp = async (req, res) => {
   const { tokenId } = req.body;
+  console.log(req.body);
+
   const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 
   if (!tokenId) {
