@@ -27,7 +27,7 @@ app.use(cors({
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'Patch'],
   credentials: true
 }));
-app.options('*', cors(corsOptions)); // For handling preflight requests
+
 
 app.use(express.json());
 app.use(session({
