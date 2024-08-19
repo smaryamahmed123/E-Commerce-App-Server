@@ -23,7 +23,7 @@ connectDB();
 
 // Middleware
 app.use(cors({
-  origin: 'https://chipper-alpaca-e56ea9.netlify.app', 
+  origin: 'https://mern-stack-e-commerce-app.netlify.app', 
   credentials: true
 }));
 
