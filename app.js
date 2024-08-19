@@ -23,8 +23,7 @@ connectDB();
 
 // Middleware
 app.use(cors({
-  origin: 'https://chipper-alpaca-e56ea9.netlify.app', // Make sure this matches exactly
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'Patch'],
+  origin: 'https://chipper-alpaca-e56ea9.netlify.app', 
   credentials: true
 }));
 
